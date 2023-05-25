@@ -61,10 +61,13 @@ namespace rat
             int[] numCount = Enumerable.Range(1, 31).ToArray();
             int spinCount = 0;
 
+#if NET472
             SoundPlayer freebird;
             var assembly = Assembly.GetExecutingAssembly();
             freebird = new SoundPlayer(assembly.GetManifestResourceStream("rat.audio.wav"));
             freebird.PlayLooping();
+#endif
+
             Console.Clear();
 
             if (ratmarkEn)
@@ -109,7 +112,7 @@ namespace rat
                         string resourceName = "rat" + num;
                         string rets = resourceSet.GetString(resourceName);
 
-                        var resourceBytes = System.Convert.FromBase64String(rets);
+                        byte[] resourceBytes = System.Convert.FromBase64String(rets);
 
                         string spinCountText = $"You have been blessed with {spinCount.ToString()} spins of the rat.";
                         spinCountText = PadBoth(spinCountText, 160);
