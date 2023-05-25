@@ -1,15 +1,15 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading;
-using System.Collections;
 using System.Globalization;
-using System.Resources;
 using System.IO;
-using System.Media;
 using System.Reflection;
 using System.Diagnostics;
+
+#if NET472
+using System.Media;
+#endif
 
 namespace rat
 {
