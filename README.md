@@ -4,6 +4,12 @@ A C# port of the [Linux horizontally spinning rat](https://github.com/Mcharlsto/
 
 ![rat](https://www.horizontallyspinningrat.tk/rat.gif)
 
+## Arguments
+```
+-m | ratmark - benchmark timedemo
+-u | uncap the framerate
+```
+
 ## Usage
 
 ### Recommended
