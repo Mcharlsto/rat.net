@@ -19,7 +19,7 @@ On Windows, run the executable.
 On Linux, install `mono`, then run `mono rat-net472-win.exe`
 
 ### Experimental - .NET Core Linux build
-There is no audio support in the .NET Core version, this is due to a cross-platform API weirdness.
+There is no audio support in the .NET Core version, this is due to cross-platform API weirdness.
 
 The archive is also massive, as it has to include its own copy of the framework.
 
